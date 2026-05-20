@@ -7,7 +7,6 @@ import {
   HeadContent,
   Scripts,
 } from "@tanstack/react-router";
-import { Nav, Footer } from "@/components/Nav";
 
 import appCss from "../styles.css?url";
 
@@ -73,14 +72,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Trans-Continental Railroad Website" },
+      { name: "description", content: "Made by Rowan Sellers and Lazare Dashvili" },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Trans-Continental Railroad Website" },
+      { property: "og:description", content: "Made by Rowan Sellers and Lazare Dashvili" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Trans-Continental Railroad Website" },
+      { name: "twitter:description", content: "Made by Rowan Sellers and Lazare Dashvili" },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/0eb000f4-a894-4218-8fee-9b5742fac597/id-preview-675ebf19--48dab82b-c25a-40c5-8f8c-9147b968c97e.lovable.app-1779249992320.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/0eb000f4-a894-4218-8fee-9b5742fac597/id-preview-675ebf19--48dab82b-c25a-40c5-8f8c-9147b968c97e.lovable.app-1779249992320.png" },
     ],
     links: [
       {
@@ -114,9 +117,7 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <Nav />
       <Outlet />
-      <Footer />
     </QueryClientProvider>
   );
 }
