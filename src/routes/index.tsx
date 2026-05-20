@@ -40,7 +40,7 @@ function Index() {
             “The greatest engineering feat of the nineteenth century” — uniting a fractured nation with iron rails from sea to shining sea.
           </p>
           <div className="mt-10 flex justify-center gap-3 text-sm">
-            <span className="px-4 py-2 rounded-full bg-primary text-primary-foreground">1863–1869</span>
+            <span className="px-4 py-2 rounded-full bg-primary text-primary-foreground">1863–1896</span>
             <span className="px-4 py-2 rounded-full border border-primary/40 text-primary">1,912 miles</span>
             <span className="px-4 py-2 rounded-full border border-primary/40 text-primary">2 companies</span>
           </div>
@@ -132,7 +132,7 @@ function Index() {
       </Section>
 
       <footer className="border-t border-border/60 mt-12 py-10 text-center text-sm text-muted-foreground">
-        <p>Created for AP United States History · Period 6: 1865–1898</p>
+        <p>Made by Rowan Sellers and Lazare Imedashvili</p>
       </footer>
     </main>
   );
