@@ -7,6 +7,7 @@ import {
   HeadContent,
   Scripts,
 } from "@tanstack/react-router";
+import { Nav, Footer } from "@/components/Nav";
 
 import appCss from "../styles.css?url";
 
@@ -113,7 +114,9 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
+      <Nav />
       <Outlet />
+      <Footer />
     </QueryClientProvider>
   );
 }
