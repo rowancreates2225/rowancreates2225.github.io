@@ -10,19 +10,19 @@ const links = [
 
 export function Nav() {
   return (
-    <nav className="sticky top-0 z-40 backdrop-blur bg-background/85 border-b border-border">
-      <div className="mx-auto max-w-5xl px-6 py-3 flex flex-wrap items-center justify-between gap-3">
-        <Link to="/" className="text-primary font-bold tracking-wide">
+    <nav className="sticky top-0 z-40 backdrop-blur bg-background/90 border-b border-border shadow-sm">
+      <div className="mx-auto max-w-6xl px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+        <Link to="/" className="text-primary font-bold tracking-wide text-base">
           Transcontinental Railroad
         </Link>
-        <ul className="flex flex-wrap gap-1 text-sm">
+        <ul className="flex flex-wrap items-center gap-2 text-sm ml-auto">
           {links.map((l) => (
             <li key={l.to}>
               <Link
                 to={l.to}
                 activeOptions={{ exact: true }}
-                activeProps={{ className: "bg-primary text-primary-foreground" }}
-                className="px-3 py-1.5 rounded hover:bg-secondary transition-colors"
+                activeProps={{ className: "bg-primary text-primary-foreground border-primary" }}
+                className="px-3 py-1.5 rounded-md border border-border bg-card hover:bg-secondary hover:border-primary/60 transition-colors font-medium"
               >
                 {l.label}
               </Link>
