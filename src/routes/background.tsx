@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import mapImg from "@/assets/map.jpg";
+import manifestDestiny from "@/assets/manifest-destiny.jpg";
 
 export const Route = createFileRoute("/background")({
   component: Background,
