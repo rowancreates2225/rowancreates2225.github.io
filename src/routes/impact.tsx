@@ -1,4 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
+import bison from "@/assets/bison.jpg";
+import creditMobilier from "@/assets/credit-mobilier.png";
 
 export const Route = createFileRoute("/impact")({
   component: Impact,
