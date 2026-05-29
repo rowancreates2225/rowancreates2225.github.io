@@ -61,6 +61,13 @@ function Construction() {
         hardest section were left out of the famous photo. That detail says a lot about how the country chose to remember the
         project.
       </p>
+
+      <figure className="mt-6">
+        <img src={goldenSpike} alt="The East and West shaking hands at the laying of the last rail, Promontory Summit, May 10, 1869" loading="lazy" className="w-full rounded shadow border border-border" />
+        <figcaption className="text-sm text-muted-foreground mt-2 italic">
+          "East and West Shaking Hands at the Laying of the Last Rail." Photo by Andrew J. Russell, May 10, 1869. Public domain (Yale Beinecke Library).
+        </figcaption>
+      </figure>
     </main>
   );
 }
