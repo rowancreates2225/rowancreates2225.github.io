@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import workers from "@/assets/workers.jpg";
 import locomotive from "@/assets/locomotive.jpg";
+import goldenSpike from "@/assets/golden-spike.webp";
 
 export const Route = createFileRoute("/construction")({
   component: Construction,
