@@ -1,4 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
+import bison from "@/assets/bison.jpg";
+import creditMobilier from "@/assets/credit-mobilier.png";
 
 export const Route = createFileRoute("/impact")({
   component: Impact,
@@ -36,6 +38,20 @@ function Impact() {
           </div>
         ))}
       </div>
+
+      <figure className="mb-8">
+        <img src={bison} alt="A herd of American bison, the species nearly driven to extinction in the decades after the railroad opened the Plains" loading="lazy" className="w-full rounded shadow border border-border" />
+        <figcaption className="text-sm text-muted-foreground mt-2 italic">
+          American bison, photographed c. 1905. Tens of millions of bison were reduced to a few hundred within a generation of the railroad's completion — a deliberate strategy to break Plains Indian nations who depended on them. Public domain (Library of Congress).
+        </figcaption>
+      </figure>
+
+      <figure className="mb-8">
+        <img src={creditMobilier} alt="Thomas Nast political cartoon depicting members of Congress implicated in the Crédit Mobilier scandal" loading="lazy" className="w-full rounded shadow border border-border bg-white" />
+        <figcaption className="text-sm text-muted-foreground mt-2 italic">
+          "An Eye Only to the Public Good." Thomas Nast cartoon for <em>Harper's Weekly</em>, 1873, on the Crédit Mobilier scandal — Union Pacific insiders overcharged the government and bribed members of Congress with discounted stock. Public domain (Library of Congress).
+        </figcaption>
+      </figure>
 
       <h2 className="text-2xl text-primary mb-3">Our Conclusion</h2>
       <p className="text-lg leading-relaxed mb-4">
