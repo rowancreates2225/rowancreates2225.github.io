@@ -14,13 +14,12 @@ export const Route = createFileRoute("/impact")({
 
 function Impact() {
   return (
-    <main className="mx-auto max-w-3xl px-6 py-12">
+    <main className="mx-auto max-w-3xl py-12 px-[16px]">
       <p className="text-xs uppercase tracking-[0.3em] text-accent mb-2">Impact & Legacy</p>
       <h1 className="text-4xl md:text-5xl text-primary mb-6">What the Rails Actually Changed</h1>
 
       <p className="text-lg leading-relaxed mb-6">
-        The railroad finished in 1869, but most of its real effects show up in the next twenty-something years. Here's how we'd
-        break it down:
+        The railroad finished in 1869, but most of its real effects show up in the next 20-30 years. Some events that proceeded the railroad are:
       </p>
 
       <div className="grid sm:grid-cols-2 gap-4 mb-8">
