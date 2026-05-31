@@ -20,7 +20,7 @@ function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/30 to-background" />
         </div>
         <div className="relative mx-auto max-w-4xl px-6 pt-20 pb-28 text-center">
-          <p className="text-xs uppercase tracking-[0.4em] text-accent mb-5">APUS History · Period 2</p>
+          <p className="text-xs uppercase tracking-[0.4em] text-accent mb-5 font-serif">APUSH · Period 2</p>
           <h1 className="text-5xl md:text-6xl text-primary font-bold mb-5 drop-shadow">The Transcontinental Railroad</h1>
           <p className="text-lg md:text-xl text-foreground/85 max-w-2xl mx-auto">
             How a 1,912-mile line of iron rebuilt the American economy, broke open the West, and left a complicated legacy behind it.
