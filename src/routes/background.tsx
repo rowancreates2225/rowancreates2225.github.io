@@ -43,32 +43,17 @@ function Background() {
         the Union during a war that was breaking the country apart.
       </p>
 
-      <figure className="mb-8">
+      <figure className="max-w-xl mx-auto mb-8">
         <img src={manifestDestiny} alt="American Progress, an 1872 painting by John Gast showing a figure of Columbia leading settlers and railroads westward" loading="lazy" className="w-full rounded shadow border border-border" />
-        <figcaption className="text-sm text-muted-foreground mt-2 italic">
+        <figcaption className="text-sm text-muted-foreground mt-2 italic text-center">
           <em>American Progress</em>, John Gast, 1872. The painting basically sells Manifest Destiny in one image — settlers, telegraph wire, and three railroads pushing west while Native peoples and bison flee. Public domain (Library of Congress).
         </figcaption>
       </figure>
 
-      <figure className="mb-8">
+      <figure className="max-w-xl mx-auto mb-4">
         <img src={mapImg} alt="Map showing the Union Pacific and Central Pacific routes meeting at Promontory Summit, Utah" loading="lazy" className="w-full rounded shadow border border-border" />
         <figcaption className="text-center text-sm text-muted-foreground mt-2 italic">
           Route from Omaha to Sacramento. Map adapted from the U.S. National Park Service (public domain).
-        </figcaption>
-      </figure>
-
-      <figure>
-        <div className="aspect-video w-full rounded overflow-hidden border border-border shadow bg-black">
-          <iframe
-            className="w-full h-full"
-            src="https://www.youtube.com/embed/W4iqRwkTnK4"
-            title="Transcontinental Railroad — short documentary clip"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-        </div>
-        <figcaption className="text-sm text-muted-foreground mt-2 italic">
-          Short documentary overview of the Transcontinental Railroad's construction and political background.
         </figcaption>
       </figure>
     </main>

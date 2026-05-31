@@ -26,9 +26,9 @@ function Construction() {
         died from explosions, avalanches, and exposure, and a lot of the names were never recorded.
       </p>
 
-      <figure className="mb-6">
+      <figure className="max-w-xl mx-auto mb-6">
         <img src={workers} alt="Crews of laborers laying rail through a mountain cut in the Sierra Nevada" loading="lazy" className="w-full rounded shadow border border-border" />
-        <figcaption className="text-sm text-muted-foreground mt-2 italic">
+        <figcaption className="text-sm text-muted-foreground mt-2 italic text-center">
           Central Pacific work crew, Sierra Nevada. Photo by Alfred A. Hart, c. 1867. Public domain (Stanford Libraries).
         </figcaption>
       </figure>
@@ -46,9 +46,9 @@ function Construction() {
         for a while before Congress made them stop at <strong>Promontory Summit, Utah</strong>.
       </p>
 
-      <figure className="mb-6">
+      <figure className="max-w-xl mx-auto mb-6">
         <img src={locomotive} alt="A 19th-century steam locomotive crossing a wooden trestle bridge" loading="lazy" className="w-full rounded shadow border border-border" />
-        <figcaption className="text-sm text-muted-foreground mt-2 italic">
+        <figcaption className="text-sm text-muted-foreground mt-2 italic text-center">
           Early steam locomotive on a wooden trestle. Photo from the Andrew J. Russell collection, c. 1868. Public domain.
         </figcaption>
       </figure>
@@ -62,9 +62,9 @@ function Construction() {
         project.
       </p>
 
-      <figure className="mt-6">
+      <figure className="max-w-xl mx-auto mt-6">
         <img src={goldenSpike} alt="The East and West shaking hands at the laying of the last rail, Promontory Summit, May 10, 1869" loading="lazy" className="w-full rounded shadow border border-border" />
-        <figcaption className="text-sm text-muted-foreground mt-2 italic">
+        <figcaption className="text-sm text-muted-foreground mt-2 italic text-center">
           "East and West Shaking Hands at the Laying of the Last Rail." Photo by Andrew J. Russell, May 10, 1869. Public domain (Yale Beinecke Library).
         </figcaption>
       </figure>
