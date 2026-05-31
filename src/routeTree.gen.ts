@@ -9,15 +9,27 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as ThesisRouteImport } from './routes/thesis'
 import { Route as ImpactRouteImport } from './routes/impact'
+import { Route as GildedAgeRouteImport } from './routes/gilded-age'
 import { Route as ConstructionRouteImport } from './routes/construction'
 import { Route as BibliographyRouteImport } from './routes/bibliography'
 import { Route as BackgroundRouteImport } from './routes/background'
 import { Route as IndexRouteImport } from './routes/index'
 
+const ThesisRoute = ThesisRouteImport.update({
+  id: '/thesis',
+  path: '/thesis',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ImpactRoute = ImpactRouteImport.update({
   id: '/impact',
   path: '/impact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GildedAgeRoute = GildedAgeRouteImport.update({
+  id: '/gilded-age',
+  path: '/gilded-age',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ConstructionRoute = ConstructionRouteImport.update({
@@ -46,14 +58,18 @@ export interface FileRoutesByFullPath {
   '/background': typeof BackgroundRoute
   '/bibliography': typeof BibliographyRoute
   '/construction': typeof ConstructionRoute
+  '/gilded-age': typeof GildedAgeRoute
   '/impact': typeof ImpactRoute
+  '/thesis': typeof ThesisRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/background': typeof BackgroundRoute
   '/bibliography': typeof BibliographyRoute
   '/construction': typeof ConstructionRoute
+  '/gilded-age': typeof GildedAgeRoute
   '/impact': typeof ImpactRoute
+  '/thesis': typeof ThesisRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -61,20 +77,38 @@ export interface FileRoutesById {
   '/background': typeof BackgroundRoute
   '/bibliography': typeof BibliographyRoute
   '/construction': typeof ConstructionRoute
+  '/gilded-age': typeof GildedAgeRoute
   '/impact': typeof ImpactRoute
+  '/thesis': typeof ThesisRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/background' | '/bibliography' | '/construction' | '/impact'
+  fullPaths:
+    | '/'
+    | '/background'
+    | '/bibliography'
+    | '/construction'
+    | '/gilded-age'
+    | '/impact'
+    | '/thesis'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/background' | '/bibliography' | '/construction' | '/impact'
+  to:
+    | '/'
+    | '/background'
+    | '/bibliography'
+    | '/construction'
+    | '/gilded-age'
+    | '/impact'
+    | '/thesis'
   id:
     | '__root__'
     | '/'
     | '/background'
     | '/bibliography'
     | '/construction'
+    | '/gilded-age'
     | '/impact'
+    | '/thesis'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -82,16 +116,32 @@ export interface RootRouteChildren {
   BackgroundRoute: typeof BackgroundRoute
   BibliographyRoute: typeof BibliographyRoute
   ConstructionRoute: typeof ConstructionRoute
+  GildedAgeRoute: typeof GildedAgeRoute
   ImpactRoute: typeof ImpactRoute
+  ThesisRoute: typeof ThesisRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/thesis': {
+      id: '/thesis'
+      path: '/thesis'
+      fullPath: '/thesis'
+      preLoaderRoute: typeof ThesisRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/impact': {
       id: '/impact'
       path: '/impact'
       fullPath: '/impact'
       preLoaderRoute: typeof ImpactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gilded-age': {
+      id: '/gilded-age'
+      path: '/gilded-age'
+      fullPath: '/gilded-age'
+      preLoaderRoute: typeof GildedAgeRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/construction': {
@@ -130,7 +180,9 @@ const rootRouteChildren: RootRouteChildren = {
   BackgroundRoute: BackgroundRoute,
   BibliographyRoute: BibliographyRoute,
   ConstructionRoute: ConstructionRoute,
+  GildedAgeRoute: GildedAgeRoute,
   ImpactRoute: ImpactRoute,
+  ThesisRoute: ThesisRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
