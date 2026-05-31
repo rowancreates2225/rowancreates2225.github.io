@@ -26,34 +26,6 @@ function Thesis() {
           the United States well into the twentieth century.
         </p>
       </blockquote>
-
-      <h2 className="text-2xl text-primary mb-3">What we are arguing</h2>
-      <p className="text-lg leading-relaxed mb-4">
-        We are arguing that the railroad is the hinge between two Americas. Before 1869 the United States was
-        a patchwork of regional economies that mostly could not reach each other in less than a season. After
-        1869 it was a continental market with shared time, shared prices, and shared problems. That shift is
-        the foundation of everything we associate with the Gilded Age — big corporations, monopoly power,
-        political corruption, mass immigration, and the closing of the frontier.
-      </p>
-
-      <h2 className="text-2xl text-primary mb-3">Why it matters</h2>
-      <p className="text-lg leading-relaxed mb-4">
-        The railroad is also our clearest early example of a public-private partnership at national scale.
-        Congress handed two corporations enormous land grants and bond subsidies, those corporations hired
-        the cheapest labor they could find (Chinese immigrants in the Sierra Nevada, Irish immigrants and
-        formerly enslaved African Americans on the Plains), and the federal government cleared the land
-        with treaties it then broke. The benefits and the costs were both real, and they were not shared
-        equally — which is why we think you can't grade the railroad as simply "good" or "bad."
-      </p>
-
-      <h2 className="text-2xl text-primary mb-3">Scope of our project</h2>
-      <p className="text-lg leading-relaxed">
-        We chose the window <strong>1863–1896</strong> on purpose. 1863 is the first spike; 1896 is roughly
-        the end of the political fallout — Crédit Mobilier, the Chinese Exclusion Act, the standardization
-        of time zones, and the Census Bureau's declaration that the frontier was "closed." The story does
-        not end at Promontory Summit. It ends a generation later, with a country that looks recognizably
-        modern.
-      </p>
     </main>
   );
 }
