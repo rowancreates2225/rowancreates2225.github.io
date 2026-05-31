@@ -53,16 +53,12 @@ function Impact() {
         </figcaption>
       </figure>
 
-      <h2 className="text-2xl text-primary mb-3">Our Conclusion</h2>
+      <h2 className="text-2xl text-primary mb-3">Conclusion</h2>
       <p className="text-lg leading-relaxed mb-4">
-        It's tempting to grade the Transcontinental Railroad as a "good" or "bad" event, but we don't think that really works. It
-        genuinely created modern America — the integrated economy, the time zones, the idea that you could move across the country
-        in days. At the same time, it was funded by a giveaway of public land, built largely by workers the country then refused to
-        let immigrate, and it accelerated the destruction of Plains Indian nations.
+        It’s easy to label the Transcontinental Railroad as purely "good" or "bad," but history is rarely that neat. While it catalyzed modern America by establishing an integrated economy, standard time zones, and rapid cross-country travel, this progress came at a profound cost. The project was funded by massive public land grants, built by immigrant laborers later excluded from the country, and devastating to Plains Indian nations.
       </p>
       <p className="text-lg leading-relaxed">
-        The most honest takeaway for us is that the railroad shows how Gilded Age progress worked in general: huge public subsidy,
-        private profit, immigrant labor, and consequences for whoever was already living in the way.
+        Ultimately, the railroad served as a case study for Gilded Age progress, relying on substantial public subsidies, private capital accumulation, marginalized labor, and a systemic disregard for anyone in its path.
       </p>
     </main>
   );
